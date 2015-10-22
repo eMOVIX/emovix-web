@@ -27,7 +27,6 @@
         <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.indigo-pink.min.css">
         <script src="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <asset:stylesheet src="styles.css"/>
         <asset:stylesheet src="application.css"/>
         <asset:javascript src="application.js"/>
         <g:layoutHead/>
@@ -58,20 +57,14 @@
                 <g:link controller="main" action="index" class="mdl-navigation__link mdl-typography--text-uppercase">Home</g:link>
                 <g:link controller="main" action="about" class="mdl-navigation__link mdl-typography--text-uppercase">About</g:link>
                 <g:link controller="main" action="team" class="mdl-navigation__link mdl-typography--text-uppercase">Team</g:link>
-                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">...</a>
-                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">...</a>
-                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">...</a>
-                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">...</a>
               </nav>
             </div>
             <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
               <i class="material-icons">more_vert</i>
             </button>
             <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-              <li class="mdl-menu__item">5.0 Lollipop</li>
-              <li class="mdl-menu__item">4.4 KitKat</li>
-              <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
-              <li class="mdl-menu__item">Android History</li>
+              <li class="mdl-menu__item"><g:link controller="mongo" class="mdl-navigation__link">MongoDB</g:link></li>
+              <li disabled class="mdl-menu__item">---</li>
             </ul>
             <span class="android-mobile-title mdl-layout-title">
               <img class="android-logo-image" src="${resource(dir: 'images', file: 'emovix-logo.png')}">
@@ -87,26 +80,9 @@
             <g:link controller="main" action="index" class="mdl-navigation__link" href="">Home</g:link>
             <g:link controller="main" action="about" class="mdl-navigation__link" href="">About</g:link>
             <g:link controller="main" action="team" class="mdl-navigation__link" href="">Team</g:link>
-            <a class="mdl-navigation__link" href="">...</a>
-            <a class="mdl-navigation__link" href="">...</a>
-            <a class="mdl-navigation__link" href="">...</a>
-            <a class="mdl-navigation__link" href="">...</a>
             <div class="android-drawer-separator"></div>
-            <span class="mdl-navigation__link" href="">Versions</span>
-            <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
-            <a class="mdl-navigation__link" href="">KitKat 4.4</a>
-            <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
-            <a class="mdl-navigation__link" href="">Android history</a>
-            <div class="android-drawer-separator"></div>
-            <span class="mdl-navigation__link" href="">Resources</span>
-            <a class="mdl-navigation__link" href="">Official blog</a>
-            <a class="mdl-navigation__link" href="">Android on Google+</a>
-            <a class="mdl-navigation__link" href="">Android on Twitter</a>
-            <div class="android-drawer-separator"></div>
-            <span class="mdl-navigation__link" href="">For developers</span>
-            <a class="mdl-navigation__link" href="">App developer resources</a>
-            <a class="mdl-navigation__link" href="">Android Open Source Project</a>
-            <a class="mdl-navigation__link" href="">Android SDK</a>
+            <span class="mdl-navigation__link" href="">Admin</span>
+            <g:link controller="mongo" class="mdl-navigation__link">MongoDB</g:link>
           </nav>
         </div>
 
@@ -264,6 +240,7 @@
 
         <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
+            <!--
             <div class="mdl-mega-footer--left-section">
               <button class="mdl-mega-footer--social-btn"></button>
               &nbsp;
@@ -277,23 +254,21 @@
                 <i class="material-icons">expand_less</i>
               </a>
             </div>
+            -->
           </div>
 
           <div class="mdl-mega-footer--middle-section">
-            <p class="mdl-typography--font-light">Satellite imagery: © 2014 Astrium, DigitalGlobe</p>
-            <p class="mdl-typography--font-light">Some features and devices may not be available in all areas</p>
+            <p class="mdl-typography--font-light">University of Lleida © 2015 Lleida, Catalonia</p>
+            <p class="mdl-typography--font-light">The #eMOVIX Project has been funded by RecerCaixa.</p>
           </div>
-
+          <!--
           <div class="mdl-mega-footer--bottom-section">
             <a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
               Versions
               <i class="material-icons">arrow_drop_up</i>
             </a>
             <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
-              <li class="mdl-menu__item">5.0 Lollipop</li>
-              <li class="mdl-menu__item">4.4 KitKat</li>
-              <li class="mdl-menu__item">4.3 Jelly Bean</li>
-              <li class="mdl-menu__item">Android History</li>
+              <li class="mdl-menu__item"><g:link controller="mongo">MongoDB</g:link></li>
             </ul>
             <a class="android-link android-link-menu mdl-typography--font-light" id="developers-dropdown">
               For Developers
@@ -308,6 +283,7 @@
             <a class="android-link mdl-typography--font-light" href="">Blog</a>
             <a class="android-link mdl-typography--font-light" href="">Privacy Policy</a>
           </div>
+          -->
 
         </footer>
       </div>
