@@ -54,16 +54,22 @@
             <!-- Navigation -->
             <div class="android-navigation-container">
               <nav class="android-navigation mdl-navigation">
-                <g:link controller="main" action="index" class="mdl-navigation__link mdl-typography--text-uppercase">Home</g:link>
+                <g:link controller="main" action="index" class="is_nav_active mdl-navigation__link mdl-typography--text-uppercase">Home</g:link>
                 <g:link controller="main" action="about" class="mdl-navigation__link mdl-typography--text-uppercase">About</g:link>
                 <g:link controller="main" action="team" class="mdl-navigation__link mdl-typography--text-uppercase">Team</g:link>
+                <a id="twitterSubmenu" class="mdl-navigation__link mdl-typography--text-uppercase" href="#">Twitter</a>
               </nav>
+              <!-- sub menu only visible when clicked on the link above -->
+              <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+                  for="twitterSubmenu">
+                <li class="mdl-menu__item"><g:link controller="main" action="monitoredUsers" class="mdl-navigation__link mdl-typography--text-uppercase">Monitored Users</g:link></li>
+              </ul>
             </div>
             <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
               <i class="material-icons">more_vert</i>
             </button>
             <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-              <li class="mdl-menu__item"><g:link controller="mongo" class="mdl-navigation__link">MongoDB</g:link></li>
+              <li class="mdl-menu__item"><g:link controller="mongo" class="mdl-navigation__link">Database Access</g:link></li>
               <li disabled class="mdl-menu__item">---</li>
             </ul>
             <span class="android-mobile-title mdl-layout-title">
@@ -77,12 +83,15 @@
             <img class="android-logo-image" src="${resource(dir: 'images', file: 'emovix-logo.png')}">
           </span>
           <nav class="mdl-navigation">
-            <g:link controller="main" action="index" class="mdl-navigation__link" href="">Home</g:link>
-            <g:link controller="main" action="about" class="mdl-navigation__link" href="">About</g:link>
-            <g:link controller="main" action="team" class="mdl-navigation__link" href="">Team</g:link>
+            <g:link controller="main" action="index" class="mdl-navigation__link  mdl-typography--text-uppercase">Home</g:link>
+            <g:link controller="main" action="about" class="mdl-navigation__link  mdl-typography--text-uppercase">About</g:link>
+            <g:link controller="main" action="team" class="mdl-navigation__link  mdl-typography--text-uppercase">Team</g:link>
             <div class="android-drawer-separator"></div>
-            <span class="mdl-navigation__link" href="">Admin</span>
-            <g:link controller="mongo" class="mdl-navigation__link">MongoDB</g:link>
+            <span class="mdl-navigation__link  mdl-typography--text-uppercase" href="">Twitter</span>
+            <g:link controller="main" action="monitoredUsers" class="mdl-navigation__link  mdl-typography--text-uppercase">Monitored Users</g:link>
+            <div class="android-drawer-separator"></div>
+            <span class="mdl-navigation__link  mdl-typography--text-uppercase" href="">Admin</span>
+            <g:link controller="mongo" class="mdl-navigation__link mdl-typography--text-uppercase">Database Access</g:link>
           </nav>
         </div>
 

@@ -26,6 +26,58 @@
           <p>
             This project intends to develop two software programs; a web page and a mobile application that give answers to youth migrant’s needs in United Kingdom and Germany (two of the European countries with more Spanish young people living in). The application will be available for free in order to encourage its use and will put in contact young people with similar needs (searching job, accommodation, health enquires, etc). The topics would be extracted from the ones discussed on the social network Twitter. Both application and web page will have a graphical appeal and users will be able to find answers to questions about new social and political movements and how young people have been migrating in order to get jobs. The applications would work as a tool to predict which European countries have the most important social movements, where such movements have been started, and the number of people engaged in the movements, etc. Additionally, it would be possible to analyse political associations related to young people and extract information youth migration.
           </p>
+          <h4>Computer methods summary</h4>
+          <p>
+            <ol>
+              <li>
+                Determine the "alias" corresponding to young
+                catalans and spaniards living in Europe. It will
+                be needed to establish hashtags lists that
+                probably are the most popular among young
+                people.
+              </li>
+              <li>
+                Determine, if possible, the formation level of
+                these young people by analysing these
+                hashtags. And determine their working status:
+                student, working, seeking job, not working.
+              </li>
+              <li>
+                Determine if they are abroad due to temporary
+                causes (stay, internship, tourism, …), or longer
+                stays (academic or job reasons).
+              </li>
+              <li>
+                Case study of the Maroon Wave group in
+                London. As they are in a Facebook group, the
+                Facebook APIs will be used to access the
+                messages, profiles and additional information of this group.
+              </li>
+              <li>
+                Determine by analysing hashtags and trending topics what are the "new forms of political
+                participation" and "social movements" for young people both abroad and residents.
+              </li>
+            </ol>
+          </p>
+          <p>
+            We will try to answer the following questions:
+            <ul>
+              <li>
+                Which relations can be stablished, during the last 5 years, between youth emigration and
+                new social movements, and the utilization of digital networks?
+              </li>
+              <li>
+                How is the spanish society mobilizing regarding the emigration of their youth population?
+              </li>
+              <li>
+                How the young emigrants are mobilized?
+              </li>
+              <li>
+                What influence has the Maroon Wave group in young emigrant people and also in the social
+                structure of our country?
+              </li>
+            </ul>
+          </p>
         </div>
       </div>
     </body>

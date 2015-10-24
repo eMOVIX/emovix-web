@@ -17,8 +17,15 @@
 @font-face {
   font-family: "And Black";
   src: url("myfont-webfont.eot?#iefix") format('embedded-opentype'),
-       url("../fonts/and_black.woff") format('woff'),
-       url("../fonts/and_black.ttf") format('truetype');
+       url("and_black.woff") format('woff'),
+       url("and_black.ttf") format('truetype');
+}
+
+.full-width {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {

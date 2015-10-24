@@ -13,16 +13,16 @@
 
             data.addRows([
               [{v:'Carles Feixa', f:'Carles Feixa<div style="color:blue; font-style:italic">(Main Researcher)</div>'}, '', ''],
-              [{v:'Clara Rubio', f:'Clara Rubio<div style="color:blue; font-style:italic">(Main Coordinator)</div>'}, '', ''],
-                  [{v:'Carles Feixa2', f:'Carles Feixa<div style="color:blue; font-style:italic">(Ethnography)</div>'}, 'Carles Feixa', ''],
-              [{v:'Research TeamE', f:'Research Team'}, 'Carles Feixa2', ''],
-              [{v:'Francesc Solsona', f:'Francesc Solsona<div style="color:blue; font-style:italic">(Computer Science)</div>'}, 'Carles Feixa', ''],
-              [{v:'Jordi Vilaplana', f:'Jordi Vilaplana<div style="color:blue; font-style:italic">(Main Computer Science Researcher)</div>'}, 'Francesc Solsona', ''],
-              [{v:'Research TeamC', f:'Research Team'}, 'Jordi Vilaplana', ''],
-              [{v:'Joan Ganau', f:'Joan Ganau<div style="color:blue; font-style:italic">(Geography)</div>'}, 'Carles Feixa', ''],
-              [{v:'Research TeamG', f:'Research Team'}, 'Joan Ganau', ''],
-              [{v:'Carme Bellet', f:'Carme Bellet<div style="color:blue; font-style:italic">(Social Movements)</div>'}, 'Carles Feixa', ''],
-              [{v:'Research TeamM', f:'Research Team'}, 'Carme Bellet', ''],
+                [{v:'Carles Feixa2', f:'Carles Feixa<div style="color:blue; font-style:italic">(Ethnography)</div>'}, 'Carles Feixa', ''],
+                  [{v:'Clara Rubio', f:'Clara Rubio<div style="color:blue; font-style:italic">(Main Coordinator)</div>'}, 'Carles Feixa2', ''],
+                    [{v:'Research TeamE', f:'Research Team'}, 'Clara Rubio', ''],
+                [{v:'Francesc Solsona', f:'Francesc Solsona<div style="color:blue; font-style:italic">(Computer Science)</div>'}, 'Carles Feixa', ''],
+                  [{v:'Jordi Vilaplana', f:'Jordi Vilaplana<div style="color:blue; font-style:italic">(Computer Science Coordinator)</div>'}, 'Francesc Solsona', ''],
+                    [{v:'Research TeamC', f:'Research Team'}, 'Jordi Vilaplana', ''],
+                [{v:'Joan Ganau', f:'Joan Ganau<div style="color:blue; font-style:italic">(Geography)</div>'}, 'Carles Feixa', ''],
+                  [{v:'Research TeamG', f:'Research Team'}, 'Joan Ganau', ''],
+                [{v:'Carme Bellet', f:'Carme Bellet<div style="color:blue; font-style:italic">(Social Movements)</div>'}, 'Carles Feixa', ''],
+                  [{v:'Research TeamM', f:'Research Team'}, 'Carme Bellet', ''],
               [{v:'External Advisors', f:'External Advisors<div style="color:blue; padding: 0px 20px;"><ul><li>Dr. David Block</li><li>Dra. Aludena Moreno</li></ul></div>'}, '', '']
             ]);
 
