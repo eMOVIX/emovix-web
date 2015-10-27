@@ -21,6 +21,11 @@
        url("and_black.ttf") format('truetype');
 }
 
+.is_nav_active {
+  opacity: 1;
+  border-bottom-color: #6ab344 !important;
+}
+
 .full-width {
   margin-top: 30px;
   margin-bottom: 30px;

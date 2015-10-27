@@ -1,6 +1,7 @@
 package cat.udl.emovix
 
 import grails.transaction.Transactional
+//import org.bson.Document;
 import com.mongodb.*
 
 @Transactional
@@ -22,6 +23,13 @@ class MongoService {
     public DBCollection collection(collectionName) {
         DB db = client().getDB(databaseName)
         return db.getCollection(collectionName)
+    }
+
+    def addMonitoredUser(userName) {
+        DB db = client().getDB(databaseName)
+        BasicDBObject doc = new BasicDBObject("screen_name", userName).
+            append("enabled", true)
+        db.getCollection("twitterUserMonitor").insert(doc)
     }
 
     def test() {

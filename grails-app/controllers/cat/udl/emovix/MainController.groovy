@@ -1,5 +1,7 @@
 package cat.udl.emovix
 
+import grails.plugin.springsecurity.annotation.Secured
+
 class MainController {
     def mongoService
 
@@ -17,6 +19,7 @@ class MainController {
       render(view: "team", model: [])
     }
 
+    @Secured(['ROLE_ADMIN', 'ROLE_USER'])
     def monitoredUsers() {
       def twitterUserMonitor = mongoService.collection("twitterUserMonitor")
       def monitoredUsers = twitterUserMonitor.find()
