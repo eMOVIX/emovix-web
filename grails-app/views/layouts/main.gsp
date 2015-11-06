@@ -58,6 +58,7 @@
                 <g:link controller="main" action="index" class="${controllerName.equals("main") && actionName.equals("index") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">Home</g:link>
                 <g:link controller="main" action="about" class="${controllerName.equals("main") && actionName.equals("about") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">About</g:link>
                 <g:link controller="main" action="team" class="${controllerName.equals("main") && actionName.equals("team") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">Team</g:link>
+                <g:link controller="main" action="survey" class="${controllerName.equals("main") && actionName.equals("survey") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">Survey</g:link>
                 <a id="twitterSubmenu" class="mdl-navigation__link mdl-typography--text-uppercase" href="#">Twitter</a>
               </nav>
               <!-- sub menu only visible when clicked on the link above -->
@@ -90,6 +91,7 @@
             <g:link controller="main" action="index" class="mdl-navigation__link  mdl-typography--text-uppercase">Home</g:link>
             <g:link controller="main" action="about" class="mdl-navigation__link  mdl-typography--text-uppercase">About</g:link>
             <g:link controller="main" action="team" class="mdl-navigation__link  mdl-typography--text-uppercase">Team</g:link>
+            <g:link controller="main" action="survey" class="mdl-navigation__link  mdl-typography--text-uppercase">Survey</g:link>
             <div class="android-drawer-separator"></div>
             <span class="mdl-navigation__link  mdl-typography--text-uppercase" href="">Twitter</span>
             <g:link controller="main" action="monitoredUsers" class="mdl-navigation__link  mdl-typography--text-uppercase">Monitored Users</g:link>

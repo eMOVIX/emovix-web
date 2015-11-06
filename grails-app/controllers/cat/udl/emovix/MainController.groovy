@@ -19,6 +19,10 @@ class MainController {
       render(view: "team", model: [])
     }
 
+    def survey() {
+      render(view: "survey", model: [])
+    }
+
     @Secured(['ROLE_ADMIN', 'ROLE_USER'])
     def monitoredUsers() {
       def twitterUserMonitor = mongoService.collection("twitterUserMonitor")
