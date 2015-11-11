@@ -6,8 +6,8 @@ class MainController {
     def mongoService
 
     def index() {
-      println mongoService.collection("twitterUser")
-      mongoService.test()
+      //println mongoService.collection("twitterUser")
+      //mongoService.test()
       render(view: "index", model: [])
     }
 
@@ -23,7 +23,7 @@ class MainController {
       render(view: "survey", model: [])
     }
 
-    @Secured(['ROLE_ADMIN', 'ROLE_USER'])
+    //@Secured(['ROLE_ADMIN', 'ROLE_USER'])
     def monitoredUsers() {
       def twitterUserMonitor = mongoService.collection("twitterUserMonitor")
       def monitoredUsers = twitterUserMonitor.find()

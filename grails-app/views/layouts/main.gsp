@@ -37,7 +37,7 @@
         <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
           <div class="mdl-layout__header-row">
             <span class="android-title mdl-layout-title">
-              <img class="android-logo-image" src="${resource(dir: 'images', file: 'emovix-logo.png')}">
+              <img class="emovix-logo-image" src="${resource(dir: 'images', file: 'emovix-logo-small.png')}">
             </span>
             <!-- Add spacer, to align navigation to the right in desktop -->
             <div class="android-header-spacer mdl-layout-spacer"></div>
@@ -75,7 +75,7 @@
               <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
                   for="twitterSubmenu">
                 <li class="mdl-menu__item">
-                  <g:link controller="main" action="monitoredUsers" class="mdl-navigation__link mdl-typography--text-uppercase">
+                  <g:link controller="twitterUserMonitor" action="index" class="mdl-navigation__link mdl-typography--text-uppercase">
                     <g:message code="layout.main.monitoredUsers" />
                   </g:link>
                 </li>
@@ -96,14 +96,14 @@
               </sec:ifLoggedIn>
             </ul>
             <span class="android-mobile-title mdl-layout-title">
-              <img class="android-logo-image" src="${resource(dir: 'images', file: 'emovix-logo.png')}">
+              <img class="emovix-logo-image" src="${resource(dir: 'images', file: 'emovix-logo-small.png')}">
             </span>
           </div>
         </div>
 
         <div class="android-drawer mdl-layout__drawer">
           <span class="mdl-layout-title">
-            <img class="android-logo-image" src="${resource(dir: 'images', file: 'emovix-logo.png')}">
+            <img class="emovix-logo-image" src="${resource(dir: 'images', file: 'emovix-logo-small.png')}">
           </span>
           <nav class="mdl-navigation">
             <g:link controller="main" action="index" class="mdl-navigation__link  mdl-typography--text-uppercase">
@@ -122,7 +122,7 @@
             <span class="mdl-navigation__link  mdl-typography--text-uppercase" href="">
               <g:message code="layout.main.twitter" />
             </span>
-            <g:link controller="main" action="monitoredUsers" class="mdl-navigation__link  mdl-typography--text-uppercase">
+            <g:link controller="twitterUserMonitor" action="index" class="mdl-navigation__link  mdl-typography--text-uppercase">
               <g:message code="layout.main.monitoredUsers" />
             </g:link>
             <div class="android-drawer-separator"></div>
@@ -307,8 +307,18 @@
           </div>
 
           <div class="mdl-mega-footer--middle-section">
-            <p class="mdl-typography--font-light">University of Lleida © 2015 Lleida, Catalonia</p>
-            <p class="mdl-typography--font-light">The #eMOVIX Project has been funded by RecerCaixa.</p>
+            <div style="display: block;">
+              <img src="${resource(dir: 'images', file: 'udl.png')}" alt="UdL">
+              <span class="mdl-typography--font-light">
+                <g:message code="layout.main.udl" />
+              </span>
+            </div>
+            <div style="display: block;">
+              <img src="${resource(dir: 'images', file: 'recercaixa.png')}" alt="RecerCaixa">
+              <span class="mdl-typography--font-light">
+                <g:message code="layout.main.recercaixa" />
+              </span>
+            </div>
           </div>
           <!--
           <div class="mdl-mega-footer--bottom-section">

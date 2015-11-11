@@ -80,9 +80,9 @@ a img{
 }
 
 
-.android-logo-image {
-  height: 28px;
-  width: 140px;
+.emovix-logo-image {
+  height: 60px;
+  width: 108px;
 }
 
 
@@ -190,7 +190,7 @@ a img{
     height: 160px;
   }
 
-    .android-drawer .android-logo-image {
+    .android-drawer .emovix-logo-image {
       position: absolute;
       bottom: 16px;
     }

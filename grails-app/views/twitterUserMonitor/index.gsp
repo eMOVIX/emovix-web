@@ -15,6 +15,9 @@
           <tr>
             <th>Twitter User</th>
             <th>Enabled</th>
+            <th>
+              Actions
+            </th>
           </tr>
         </thead>
         <tbody>
@@ -29,10 +32,14 @@
                   <i class="material-icons">highlight_off</i>
                 </g:else>
               </td>
+              <td>
+                <g:link action="snapshots" id="${user.screen_name}">Show snapshots</g:link>
+              </td>
             </tr>
           </g:each>
           <tr>
             <td colspan="2">Total: ${monitoredUsers.size()}</td>
+          </tr>
         </tbody>
       </table>
     </body>
