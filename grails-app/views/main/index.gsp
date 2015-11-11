@@ -6,8 +6,12 @@
     <body>
           <a name="top"></a>
           <div class="android-be-together-section mdl-typography--text-center">
-            <div class="android-font android-slogan">#eMOVIX Project</div>
-            <div class="android-font android-sub-slogan">welcome to the #eMOVIX website... We are under active development.</div>
+            <div class="android-font android-slogan">
+              <g:message code="main.index.title" />
+            </div>
+            <div class="android-font android-sub-slogan">
+              <g:message code="main.index.slogan" />
+            </div>
 
             <!--
             <a href="#screens">

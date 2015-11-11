@@ -22,7 +22,7 @@
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title><g:layoutTitle default="#eMOVIX Project"/></title>
+        <title><g:layoutTitle default="${g.message(code: 'layouts.main.title')}"/></title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.indigo-pink.min.css">
         <script src="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
@@ -55,23 +55,41 @@
             <div class="android-navigation-container">
               <nav class="android-navigation mdl-navigation">
 
-                <g:link controller="main" action="index" class="${controllerName.equals("main") && actionName.equals("index") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">Home</g:link>
-                <g:link controller="main" action="about" class="${controllerName.equals("main") && actionName.equals("about") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">About</g:link>
-                <g:link controller="main" action="team" class="${controllerName.equals("main") && actionName.equals("team") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">Team</g:link>
-                <g:link controller="main" action="survey" class="${controllerName.equals("main") && actionName.equals("survey") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">Survey</g:link>
-                <a id="twitterSubmenu" class="mdl-navigation__link mdl-typography--text-uppercase" href="#">Twitter</a>
+                <g:link controller="main" action="index" class="${controllerName.equals("main") && actionName.equals("index") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">
+                  <g:message code="layout.main.home" />
+                </g:link>
+                <g:link controller="main" action="about" class="${controllerName.equals("main") && actionName.equals("about") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">
+                  <g:message code="layout.main.about" />
+                </g:link>
+                <g:link controller="main" action="team" class="${controllerName.equals("main") && actionName.equals("team") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">
+                  <g:message code="layout.main.team" />
+                </g:link>
+                <g:link controller="main" action="survey" class="${controllerName.equals("main") && actionName.equals("survey") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">
+                  <g:message code="layout.main.survey" />
+                </g:link>
+                <a id="twitterSubmenu" class="mdl-navigation__link mdl-typography--text-uppercase" href="#">
+                  <g:message code="layout.main.twitter" />
+                </a>
               </nav>
               <!-- sub menu only visible when clicked on the link above -->
               <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
                   for="twitterSubmenu">
-                <li class="mdl-menu__item"><g:link controller="main" action="monitoredUsers" class="mdl-navigation__link mdl-typography--text-uppercase">Monitored Users</g:link></li>
+                <li class="mdl-menu__item">
+                  <g:link controller="main" action="monitoredUsers" class="mdl-navigation__link mdl-typography--text-uppercase">
+                    <g:message code="layout.main.monitoredUsers" />
+                  </g:link>
+                </li>
               </ul>
             </div>
             <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
               <i class="material-icons">more_vert</i>
             </button>
             <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-              <li class="mdl-menu__item"><g:link controller="mongo" class="mdl-navigation__link">Database Access</g:link></li>
+              <li class="mdl-menu__item">
+                <g:link controller="mongo" class="mdl-navigation__link">
+                  <g:message code="layout.main.databaseAccess" />
+                </g:link>
+              </li>
               <li disabled class="mdl-menu__item">---</li>
               <sec:ifLoggedIn>
                 <li class="mdl-menu__item"><g:link controller="logout" class="mdl-navigation__link"><i class="icon-off"></i> <g:message code="layout.main.logout" /> (${sec.loggedInUserInfo(field: "username")})</g:link></li>
@@ -88,16 +106,32 @@
             <img class="android-logo-image" src="${resource(dir: 'images', file: 'emovix-logo.png')}">
           </span>
           <nav class="mdl-navigation">
-            <g:link controller="main" action="index" class="mdl-navigation__link  mdl-typography--text-uppercase">Home</g:link>
-            <g:link controller="main" action="about" class="mdl-navigation__link  mdl-typography--text-uppercase">About</g:link>
-            <g:link controller="main" action="team" class="mdl-navigation__link  mdl-typography--text-uppercase">Team</g:link>
-            <g:link controller="main" action="survey" class="mdl-navigation__link  mdl-typography--text-uppercase">Survey</g:link>
+            <g:link controller="main" action="index" class="mdl-navigation__link  mdl-typography--text-uppercase">
+              <g:message code="layout.main.home" />
+            </g:link>
+            <g:link controller="main" action="about" class="mdl-navigation__link  mdl-typography--text-uppercase">
+              <g:message code="layout.main.about" />
+            </g:link>
+            <g:link controller="main" action="team" class="mdl-navigation__link  mdl-typography--text-uppercase">
+              <g:message code="layout.main.team" />
+            </g:link>
+            <g:link controller="main" action="survey" class="mdl-navigation__link  mdl-typography--text-uppercase">
+              <g:message code="layout.main.survey" />
+            </g:link>
             <div class="android-drawer-separator"></div>
-            <span class="mdl-navigation__link  mdl-typography--text-uppercase" href="">Twitter</span>
-            <g:link controller="main" action="monitoredUsers" class="mdl-navigation__link  mdl-typography--text-uppercase">Monitored Users</g:link>
+            <span class="mdl-navigation__link  mdl-typography--text-uppercase" href="">
+              <g:message code="layout.main.twitter" />
+            </span>
+            <g:link controller="main" action="monitoredUsers" class="mdl-navigation__link  mdl-typography--text-uppercase">
+              <g:message code="layout.main.monitoredUsers" />
+            </g:link>
             <div class="android-drawer-separator"></div>
-            <span class="mdl-navigation__link  mdl-typography--text-uppercase" href="">Admin</span>
-            <g:link controller="mongo" class="mdl-navigation__link mdl-typography--text-uppercase">Database Access</g:link>
+            <span class="mdl-navigation__link  mdl-typography--text-uppercase" href="">
+              Admin
+            </span>
+            <g:link controller="mongo" class="mdl-navigation__link mdl-typography--text-uppercase">
+              <g:message code="layout.main.databaseAccess" />
+            </g:link>
           </nav>
         </div>
 
