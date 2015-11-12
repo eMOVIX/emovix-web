@@ -4,5 +4,5 @@ sudo: false # To use new Travis docker-based infrastructure
 branches:
   only:
     - master
-script:
-  - gradle test
+#script:
+#  - gradle test
