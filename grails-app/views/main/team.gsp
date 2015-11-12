@@ -65,30 +65,35 @@
   </div>
   <ul id="basic-chart-source" class="hide">
     <li>
-      Carles Feixa<br />Main Researcher
-      <img src="${resource(dir: 'images/team', file: 'carles_feixa.png')}">
+      <br />
+      Carles Feixa<br />(Main Researcher)
       <ul>
         <li>
+          <br />
           Carles Feixa<br />(Ethnography)
           <ul>
             <li>
+              <br />
               Clara Rubio<br />
               (Main Coordinator)
               <ul>
-                <li>Research Team</li>
+                <li><br />Research Team</li>
               </ul>
             </li>
           </ul>
         </li>
         <li>
+          <br />
           Francesc Solsona<br />
           (Computer Science)
           <ul>
             <li>
+              <br />
               Jordi Vilaplana
               (Computer Science Coordinator)
               <ul>
                 <li>
+                  <br />
                   Research Team
                 </li>
               </ul>
@@ -96,30 +101,37 @@
           </ul>
         </li>
         <li>
+          <br />
           Joan Ganau<br />
           (Geography)
           <ul>
             <li>
+              <br />
               Research Team
             </li>
           </ul>
         </li>
         <li>
+          <br />
           Carme Bellet<br />
           (Social Movements)
           <ul>
             <li>
+              <br />
               Research Team
             </li>
           </ul>
         </li>
         <li>
+          <br />
           External Advisors
           <ul>
             <li>
+              <br />
               Dr. David Block
             </li>
             <li>
+              <br />
               Dra. Aludena Moreno
             </li>
           </ul>
