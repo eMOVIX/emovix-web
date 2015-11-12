@@ -66,6 +66,7 @@
   <ul id="basic-chart-source" class="hide">
     <li>
       Carles Feixa<br />Main Researcher
+      <img src="${resource(dir: 'images/team', file: 'carles_feixa.png')}">
       <ul>
         <li>
           Carles Feixa<br />(Ethnography)
