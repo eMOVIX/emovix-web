@@ -2,6 +2,46 @@
 <html>
     <head>
         <meta name="layout" content="main"/>
+        <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <asset:javascript src="c3.min.js"/>
+        <asset:stylesheet src="c3.min.css"/>
+        <script>
+        $(function() {
+          <g:applyCodec encodeAs="none">
+          var chart_dates = ${chart_dates};
+          </g:applyCodec>
+          var chart_statuses_count = ${chart_statuses_count};
+          var chart_followers_count = ${chart_followers_count};
+          var chart_friends_count = ${chart_friends_count};
+
+          chart_dates.unshift('x');
+          chart_statuses_count.unshift('# Tweets');
+          chart_followers_count.unshift('# Followers');
+          chart_friends_count.unshift('# Following');
+
+          var chart = c3.generate({
+            bindto: '#chart',
+            data: {
+              x: 'x',
+              xFormat: '%Y-%m-%d', // 'xFormat' can be used as custom format of 'x'
+              columns: [
+                chart_dates,
+                chart_statuses_count,
+                chart_followers_count,
+                chart_friends_count
+              ]
+            },
+            axis: {
+              x: {
+                  type: 'timeseries',
+                  tick: {
+                      format: '%Y-%m-%d'
+                  }
+              }
+            }
+          });
+        });
+        </script>
     </head>
     <body>
       <a name="top"></a>
@@ -10,6 +50,7 @@
           @${params.id}'s snapshots <small>(${snapshots.size()})</small>
         </div>
       </div>
+      ${snaps}
       <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp full-width">
         <thead>
           <tr>
@@ -47,5 +88,6 @@
           </g:each>
         </tbody>
       </table>
+      <div id="chart"></div>
     </body>
 </html>

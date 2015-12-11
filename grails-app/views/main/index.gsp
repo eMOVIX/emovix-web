@@ -12,7 +12,6 @@
             <div class="android-font android-sub-slogan">
               <g:message code="main.index.slogan" />
             </div>
-
             <!--
             <a href="#screens">
               <button class="android-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">

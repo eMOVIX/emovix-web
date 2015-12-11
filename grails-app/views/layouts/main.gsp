@@ -37,7 +37,7 @@
         <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
           <div class="mdl-layout__header-row">
             <span class="android-title mdl-layout-title">
-              <img class="emovix-logo-image" src="${resource(dir: 'images', file: 'emovix-logo-small.png')}">
+              <img class="emovix-logo-image" src="${resource(dir: 'images', file: 'emovix-logo-small.png')}" alt="#eMOVIX Logo"/>
             </span>
             <!-- Add spacer, to align navigation to the right in desktop -->
             <div class="android-header-spacer mdl-layout-spacer"></div>
@@ -96,7 +96,7 @@
               </sec:ifLoggedIn>
             </ul>
             <span class="android-mobile-title mdl-layout-title">
-              <img class="emovix-logo-image" src="${resource(dir: 'images', file: 'emovix-logo-small.png')}">
+              <img class="emovix-logo-image" src="${resource(dir: 'images', file: 'emovix-logo-small.png')}" alt="#eMOVIX Logo">
             </span>
           </div>
         </div>
@@ -289,9 +289,16 @@
 
         <footer class="android-footer mdl-mega-footer">
           <div class="mdl-mega-footer--top-section">
-            <!--
-            <div class="mdl-mega-footer--left-section">
-              <button class="mdl-mega-footer--social-btn"></button>
+
+            <div class="mdl-mega-footer--right-section">
+              <a href="https://twitter.com/e_movix" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @e_movix</a>
+              <script>
+                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+              </script>
+              <!--
+              <button class="mdl-mega-footer--social-btn">
+
+              </button>
               &nbsp;
               <button class="mdl-mega-footer--social-btn"></button>
               &nbsp;
@@ -302,8 +309,8 @@
                 Back to Top
                 <i class="material-icons">expand_less</i>
               </a>
+              -->
             </div>
-            -->
           </div>
 
           <div class="mdl-mega-footer--middle-section">
