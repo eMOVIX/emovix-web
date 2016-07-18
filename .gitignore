@@ -11,3 +11,6 @@ build/
 
 # Asscache
 .asscache
+
+# IntelliJ IDEA
+.idea/

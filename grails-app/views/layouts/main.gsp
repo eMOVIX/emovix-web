@@ -18,26 +18,26 @@
 -->
 
 <html lang="en" class="no-js">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title><g:layoutTitle default="${g.message(code: 'layouts.main.title')}"/></title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.indigo-pink.min.css">
-        <script src="https://storage.googleapis.com/code.getmdl.io/1.0.5/material.min.js"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <asset:stylesheet src="application.css"/>
-        <asset:javascript src="application.js"/>
-        <g:layoutHead/>
-    </head>
-    <body>
-      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><g:layoutTitle default="${g.message(code: 'layouts.main.title')}"/></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <asset:stylesheet src="application.css"/>
+    <asset:javascript src="application.js"/>
+    <g:layoutHead/>
+</head>
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-        <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
-          <div class="mdl-layout__header-row">
+    <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
             <span class="android-title mdl-layout-title">
-              <img class="emovix-logo-image" src="${resource(dir: 'images', file: 'emovix-logo-small.png')}" alt="#eMOVIX Logo"/>
+                <img class="emovix-logo-image" src="${resource(dir: 'images', file: 'emovix-logo-small.png')}" alt="#eMOVIX Logo"/>
             </span>
             <!-- Add spacer, to align navigation to the right in desktop -->
             <div class="android-header-spacer mdl-layout-spacer"></div>
@@ -53,96 +53,89 @@
             -->
             <!-- Navigation -->
             <div class="android-navigation-container">
-              <nav class="android-navigation mdl-navigation">
+                <nav class="android-navigation mdl-navigation">
 
-                <g:link controller="main" action="index" class="${controllerName.equals("main") && actionName.equals("index") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">
-                  <g:message code="layout.main.home" />
-                </g:link>
-                <g:link controller="main" action="about" class="${controllerName.equals("main") && actionName.equals("about") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">
-                  <g:message code="layout.main.about" />
-                </g:link>
-                <g:link controller="main" action="team" class="${controllerName.equals("main") && actionName.equals("team") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">
-                  <g:message code="layout.main.team" />
-                </g:link>
-                <g:link controller="main" action="survey" class="${controllerName.equals("main") && actionName.equals("survey") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">
-                  <g:message code="layout.main.survey" />
-                </g:link>
-                <a id="twitterSubmenu" class="mdl-navigation__link mdl-typography--text-uppercase" href="#">
-                  <g:message code="layout.main.twitter" />
-                </a>
-              </nav>
-              <!-- sub menu only visible when clicked on the link above -->
-              <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
-                  for="twitterSubmenu">
-                <li class="mdl-menu__item">
-                  <g:link controller="twitterUserMonitor" action="index" class="mdl-navigation__link mdl-typography--text-uppercase">
-                    <g:message code="layout.main.monitoredUsers" />
-                  </g:link>
-                </li>
-              </ul>
+                    <g:link controller="main" action="index" class="${controllerName.equals("main") && actionName.equals("index") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">
+                        <g:message code="layout.main.home" />
+                    </g:link>
+                    <g:link controller="main" action="about" class="${controllerName.equals("main") && actionName.equals("about") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">
+                        <g:message code="layout.main.about" />
+                    </g:link>
+                    <g:link controller="main" action="team" class="${controllerName.equals("main") && actionName.equals("team") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">
+                        <g:message code="layout.main.team" />
+                    </g:link>
+                    <g:link controller="main" action="survey" class="${controllerName.equals("main") && actionName.equals("survey") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">
+                        <g:message code="layout.main.survey" />
+                    </g:link>
+                    <a id="twitterSubmenu" class="mdl-navigation__link mdl-typography--text-uppercase" href="#">
+                        <g:message code="layout.main.twitter" />
+                    </a>
+                </nav>
+                <!-- sub menu only visible when clicked on the link above -->
+                <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+                    for="twitterSubmenu">
+                    <li class="mdl-menu__item">
+                        <g:link controller="twitterUserMonitor" action="index" class="mdl-navigation__link mdl-typography--text-uppercase">
+                            <g:message code="layout.main.monitoredUsers" />
+                        </g:link>
+                    </li>
+                </ul>
             </div>
             <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-              <i class="material-icons">more_vert</i>
+                <i class="material-icons">more_vert</i>
             </button>
             <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-              <li class="mdl-menu__item">
-                <g:link controller="mongo" class="mdl-navigation__link">
-                  <g:message code="layout.main.databaseAccess" />
-                </g:link>
-              </li>
-              <li disabled class="mdl-menu__item">---</li>
-              <sec:ifLoggedIn>
-                <li class="mdl-menu__item"><g:link controller="logout" class="mdl-navigation__link"><i class="icon-off"></i> <g:message code="layout.main.logout" /> (${sec.loggedInUserInfo(field: "username")})</g:link></li>
-              </sec:ifLoggedIn>
+                <li class="mdl-menu__item">
+                    <g:link controller="mongo" class="mdl-navigation__link">
+                        <g:message code="layout.main.databaseAccess" />
+                    </g:link>
+                </li>
+                <li disabled class="mdl-menu__item">---</li>
+                <sec:ifLoggedIn>
+                    <li class="mdl-menu__item"><g:link controller="logout" class="mdl-navigation__link"><i class="icon-off"></i> <g:message code="layout.main.logout" /> (${sec.loggedInUserInfo(field: "username")})</g:link></li>
+                </sec:ifLoggedIn>
             </ul>
             <span class="android-mobile-title mdl-layout-title">
-              <img class="emovix-logo-image" src="${resource(dir: 'images', file: 'emovix-logo-small.png')}" alt="#eMOVIX Logo">
+                <img class="emovix-logo-image" src="${resource(dir: 'images', file: 'emovix-logo-small.png')}" alt="#eMOVIX Logo">
             </span>
-          </div>
         </div>
+    </div>
 
-        <div class="android-drawer mdl-layout__drawer">
-          <span class="mdl-layout-title">
+    <div class="android-drawer mdl-layout__drawer">
+        <span class="mdl-layout-title">
             <img class="emovix-logo-image" src="${resource(dir: 'images', file: 'emovix-logo-small.png')}">
-          </span>
-          <nav class="mdl-navigation">
+        </span>
+        <nav class="mdl-navigation">
             <g:link controller="main" action="index" class="mdl-navigation__link  mdl-typography--text-uppercase">
-              <g:message code="layout.main.home" />
+                <g:message code="layout.main.home" />
             </g:link>
             <g:link controller="main" action="about" class="mdl-navigation__link  mdl-typography--text-uppercase">
-              <g:message code="layout.main.about" />
+                <g:message code="layout.main.about" />
             </g:link>
             <g:link controller="main" action="team" class="mdl-navigation__link  mdl-typography--text-uppercase">
-              <g:message code="layout.main.team" />
+                <g:message code="layout.main.team" />
             </g:link>
             <g:link controller="main" action="survey" class="mdl-navigation__link  mdl-typography--text-uppercase">
-              <g:message code="layout.main.survey" />
+                <g:message code="layout.main.survey" />
             </g:link>
             <div class="android-drawer-separator"></div>
             <span class="mdl-navigation__link  mdl-typography--text-uppercase" href="">
-              <g:message code="layout.main.twitter" />
+                <g:message code="layout.main.twitter" />
             </span>
             <g:link controller="twitterUserMonitor" action="index" class="mdl-navigation__link  mdl-typography--text-uppercase">
-              <g:message code="layout.main.monitoredUsers" />
+                <g:message code="layout.main.monitoredUsers" />
             </g:link>
             <div class="android-drawer-separator"></div>
             <span class="mdl-navigation__link  mdl-typography--text-uppercase" href="">
-              Admin
+                Admin
             </span>
             <g:link controller="mongo" class="mdl-navigation__link mdl-typography--text-uppercase">
-              <g:message code="layout.main.databaseAccess" />
+                <g:message code="layout.main.databaseAccess" />
             </g:link>
-          </nav>
-        </div>
-
-        <div class="android-content mdl-layout__content">
-
-
-
+        </nav>
+    </div>
+    <div class="android-content mdl-layout__content">
         <g:layoutBody/>
-
-
-
 
         <!--
         <div class="android-screen-section mdl-typography--text-center">
@@ -288,14 +281,18 @@
         -->
 
         <footer class="android-footer mdl-mega-footer">
-          <div class="mdl-mega-footer--top-section">
+            <div class="mdl-mega-footer--top-section">
+                <div class="mdl-mega-footer__left-section">
 
-            <div class="mdl-mega-footer--right-section">
-              <a href="https://twitter.com/e_movix" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @e_movix</a>
-              <script>
-                !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-              </script>
-              <!--
+                </div>
+                <div class="mdl-mega-footer--right-section">
+                    <a href="https://twitter.com/e_movix" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @e_movix</a>
+                    <script>
+                        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+                    </script>
+                </div>
+            </div>
+            <!--
               <button class="mdl-mega-footer--social-btn">
 
               </button>
@@ -310,24 +307,29 @@
                 <i class="material-icons">expand_less</i>
               </a>
               -->
-            </div>
-          </div>
 
-          <div class="mdl-mega-footer--middle-section">
-            <div style="display: block;">
-              <img src="${resource(dir: 'images', file: 'udl.png')}" alt="UdL">
-              <span class="mdl-typography--font-light">
-                <g:message code="layout.main.udl" />
-              </span>
+            <div class="mdl-mega-footer__middle-section">
+                <div class="mdl-mega-footer--left-section">
+                    <span class="mdl-typography--font-light">
+                        <g:message code="layout.main.acknowledgments" />
+                    </span>
+                </div>
             </div>
-            <div style="display: block;">
-              <img src="${resource(dir: 'images', file: 'recercaixa.png')}" alt="RecerCaixa">
-              <span class="mdl-typography--font-light">
-                <g:message code="layout.main.recercaixa" />
-              </span>
+            <div class="mdl-mega-footer__bottom-section">
+                <div class="mdl-mega-footer--left-section">
+                    <div style="display: block;">
+                        <img class="footer_logo" src="${resource(dir: 'images', file: 'udl.png')}" alt="UdL">
+                        <img class="footer_logo" src="${resource(dir: 'images', file: 'logo_recercaixa.png')}" alt="RecerCaixa">
+                    </div>
+                </div>
+                <div class="mdl-mega-footer--right-section">
+                    <div style="display: block;">
+                        <img class="footer_logo" src="${resource(dir: 'images', file: 'logo_acup.png')}" alt="ACUP">
+                        <img class="footer_logo" src="${resource(dir: 'images', file: 'logo_obra_social.png')}" alt="Obra Social 'la Caixa'">
+                    </div>
+                </div>
             </div>
-          </div>
-          <!--
+            <!--
           <div class="mdl-mega-footer--bottom-section">
             <a class="android-link android-link-menu mdl-typography--font-light" id="version-dropdown">
               Versions
@@ -352,7 +354,7 @@
           -->
 
         </footer>
-      </div>
     </div>
-    </body>
+</div>
+</body>
 </html>

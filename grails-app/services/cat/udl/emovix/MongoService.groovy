@@ -8,7 +8,7 @@ import com.mongodb.*
 class MongoService {
 
     private static MongoClient mongoClient
-    private static host = "localhost"    //your host name
+    private static host = "192.168.101.12"    //your host name
     private static port = 27017      //your port no.
     private static databaseName = "emovix"
 
