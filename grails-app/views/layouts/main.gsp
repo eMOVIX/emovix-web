@@ -28,7 +28,6 @@
     <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <asset:stylesheet src="application.css"/>
-    <asset:javascript src="application.js"/>
     <g:layoutHead/>
 </head>
 <body>
@@ -58,19 +57,26 @@
                     <g:link controller="main" action="index" class="${controllerName.equals("main") && actionName.equals("index") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">
                         <g:message code="layout.main.home" />
                     </g:link>
+                    <%--
                     <g:link controller="main" action="about" class="${controllerName.equals("main") && actionName.equals("about") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">
                         <g:message code="layout.main.about" />
                     </g:link>
+                    --%>
                     <g:link controller="main" action="team" class="${controllerName.equals("main") && actionName.equals("team") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">
                         <g:message code="layout.main.team" />
                     </g:link>
+                    <%--
                     <g:link controller="main" action="survey" class="${controllerName.equals("main") && actionName.equals("survey") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">
                         <g:message code="layout.main.survey" />
                     </g:link>
+                    --%>
+                    <%--
                     <a id="twitterSubmenu" class="mdl-navigation__link mdl-typography--text-uppercase" href="#">
                         <g:message code="layout.main.twitter" />
                     </a>
+                    --%>
                 </nav>
+                <%--
                 <!-- sub menu only visible when clicked on the link above -->
                 <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
                     for="twitterSubmenu">
@@ -80,7 +86,9 @@
                         </g:link>
                     </li>
                 </ul>
+                --%>
             </div>
+            <%--
             <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
                 <i class="material-icons">more_vert</i>
             </button>
@@ -95,6 +103,7 @@
                     <li class="mdl-menu__item"><g:link controller="logout" class="mdl-navigation__link"><i class="icon-off"></i> <g:message code="layout.main.logout" /> (${sec.loggedInUserInfo(field: "username")})</g:link></li>
                 </sec:ifLoggedIn>
             </ul>
+            --%>
             <span class="android-mobile-title mdl-layout-title">
                 <img class="emovix-logo-image" src="${resource(dir: 'images', file: 'emovix-logo-small.png')}" alt="#eMOVIX Logo">
             </span>
@@ -109,15 +118,20 @@
             <g:link controller="main" action="index" class="mdl-navigation__link  mdl-typography--text-uppercase">
                 <g:message code="layout.main.home" />
             </g:link>
+            <%--
             <g:link controller="main" action="about" class="mdl-navigation__link  mdl-typography--text-uppercase">
                 <g:message code="layout.main.about" />
             </g:link>
+            --%>
             <g:link controller="main" action="team" class="mdl-navigation__link  mdl-typography--text-uppercase">
                 <g:message code="layout.main.team" />
             </g:link>
+            <%--
             <g:link controller="main" action="survey" class="mdl-navigation__link  mdl-typography--text-uppercase">
                 <g:message code="layout.main.survey" />
             </g:link>
+            --%>
+            <%--
             <div class="android-drawer-separator"></div>
             <span class="mdl-navigation__link  mdl-typography--text-uppercase" href="">
                 <g:message code="layout.main.twitter" />
@@ -132,6 +146,7 @@
             <g:link controller="mongo" class="mdl-navigation__link mdl-typography--text-uppercase">
                 <g:message code="layout.main.databaseAccess" />
             </g:link>
+            --%>
         </nav>
     </div>
     <div class="android-content mdl-layout__content">
@@ -310,7 +325,7 @@
 
             <div class="mdl-mega-footer__middle-section">
                 <div class="mdl-mega-footer--left-section">
-                    <span class="mdl-typography--font-light">
+                    <span class="mdl-typography--font-light font-acknowledgments">
                         <g:message code="layout.main.acknowledgments" />
                     </span>
                 </div>
@@ -356,5 +371,6 @@
         </footer>
     </div>
 </div>
+<asset:javascript src="application.js"/>
 </body>
 </html>

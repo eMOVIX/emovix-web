@@ -21,6 +21,14 @@
     url("and_black.ttf") format('truetype');
 }
 
+.font-acknowledgments {
+    font-size: large;
+}
+
+.center {
+    text-align: center;
+}
+
 .mdl-card + .mdl-card {
     margin-top: 40px;
 }
@@ -69,7 +77,7 @@
 }
 
 .footer_logo {
-    max-height: 40px;
+    max-height: 60px;
     padding: 10px;
 }
 
@@ -238,7 +246,7 @@ a img{
 
 .android-drawer .mdl-layout-title {
     position: relative;
-    background: #6ab344;
+    background: #a9cef3;
     height: 160px;
 }
 
