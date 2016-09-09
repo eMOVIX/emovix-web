@@ -20,7 +20,12 @@
     </div>
 </div>
 
-
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col">
+        <h4 class="center text_b"><g:link controller="main" action="forum">Apunta't al Fòrum !</g:link></h4>
+        <p class="center">24 - 25 novembre 2016, Lleida</p>
+    </div>
+</div>
 
 
 <!--Intro and service-->

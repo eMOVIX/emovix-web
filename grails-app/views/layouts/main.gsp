@@ -65,6 +65,9 @@
                     <g:link controller="main" action="team" class="${controllerName.equals("main") && actionName.equals("team") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">
                         <g:message code="layout.main.team" />
                     </g:link>
+                    <g:link controller="main" action="forum" class="${controllerName.equals("main") && actionName.equals("forum") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">
+                        <g:message code="layout.main.forum" />
+                    </g:link>
                     <%--
                     <g:link controller="main" action="survey" class="${controllerName.equals("main") && actionName.equals("survey") ? "is_nav_active" : ""} mdl-navigation__link mdl-typography--text-uppercase">
                         <g:message code="layout.main.survey" />
@@ -125,6 +128,9 @@
             --%>
             <g:link controller="main" action="team" class="mdl-navigation__link  mdl-typography--text-uppercase">
                 <g:message code="layout.main.team" />
+            </g:link>
+            <g:link controller="main" action="forum" class="mdl-navigation__link  mdl-typography--text-uppercase">
+                <g:message code="layout.main.forum" />
             </g:link>
             <%--
             <g:link controller="main" action="survey" class="mdl-navigation__link  mdl-typography--text-uppercase">
@@ -372,5 +378,9 @@
     </div>
 </div>
 <asset:javascript src="application.js"/>
+<!-- Custom placeholder for page scripts -->
+<g:ifPageProperty name="page.footScripts">
+    <g:pageProperty name="page.footScripts" />
+</g:ifPageProperty>
 </body>
 </html>

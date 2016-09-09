@@ -10,7 +10,7 @@
         <h2 class="header text_b">#eMOVIX Team</h2>
     </div>
 </div>
-<div class="container">
+
     <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--4-col">
             <div class="mdl-card mdl-shadow--2dp mdl-card--horizontal">
@@ -22,6 +22,7 @@
                 </div>
                 <div class="mdl-card__supporting-text">
                     <g:message code="main.team.ip" />.
+                    <p>Etnografia.</p>
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
                     <a href="http://www.geosoc.udl.es/professorat/Feixa.htm" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">
@@ -40,6 +41,7 @@
                 </div>
                 <div class="mdl-card__supporting-text">
                     <g:message code="main.team.codirector" />.
+                    <p>Geografia.</p>
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
                     <a href="http://www.geosoc.udl.cat/professorat/Ganau.htm" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">
@@ -58,6 +60,7 @@
                 </div>
                 <div class="mdl-card__supporting-text">
                     <g:message code="main.team.codirector" />.
+                    <p>Informàtica.</p>
                 </div>
                 <div class="mdl-card__actions mdl-card--border">
                     <a href="http://gcd.udl.cat/users/francesc-solsona" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" data-upgraded=",MaterialButton,MaterialRipple">
@@ -72,7 +75,7 @@
         <div class="mdl-cell mdl-cell--4-col">
             <div class="mdl-card mdl-shadow--2dp mdl-card--horizontal">
                 <div class="mdl-card__media">
-                    <img src="${resource(dir: 'images', file: 'team/nophoto-man.png')}" alt="">
+                    <img src="${resource(dir: 'images', file: 'team/team_rubio.jpg')}" width="150" height="200" alt="">
                 </div>
                 <div class="mdl-card__title">
                     <h2 class="mdl-card__title-text">Clara Rubio</h2>
@@ -638,6 +641,6 @@
             </div>
         </div>
     </div>
-</div>
+
 </body>
 </html>
