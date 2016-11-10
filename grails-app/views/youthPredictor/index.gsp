@@ -12,16 +12,13 @@
     <div class="mdl-typography--text-justify">
         <div class="mdl-color-text--grey-700 mdl-card__supporting-text">
             <p>
-                Des de la coordinació del projecte "#eMOVIX. Emigració juvenil, nous moviments socials i xarxes digitals" us volem demanar la vostra col·laboració.
+                Des del projecte "#eMOVIX. Emigració juvenil, nous moviments socials i xarxes digitals" estem estudiant diferents aspectes de les persones joves Catalanes dins i fora de les xarxes socials.
             </p>
             <p>
-                Un dels objectius de la recerca és conèixer la demografia de les persones catalanes a Twitter.
+                Un dels objectius de la recerca és conèixer la demografia de les persones catalanes a Twitter, i en aquesta línia hem desenvolupat un algorisme de predicció d'edat.
             </p>
             <p>
-                Per poder assolir aquest objectiu us demanem que respongueu la següent pregunta indicant a quin grup d'edat pertanyeu. Moltes gràcies!
-            </p>
-            <p>
-                (<a href="http://www.joventut.udl.cat/?p=225" target="_blank">Més informació sobre el projecte</a>)
+                Vols provar-ho amb el teu usuari de Twitter? Escriu-lo en el camp de text inferior i provarem d'encertar el teu rang d'edat!
             </p>
         </div>
     </div>
