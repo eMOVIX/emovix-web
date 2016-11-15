@@ -41,7 +41,7 @@
 
                     <p>
                         <input class="with-gap" name="ageGroup" type="radio" id="ageGroup3" value="3"/>
-                        <label for="ageGroup3">Entre 34 i 39 anys</label>
+                        <label for="ageGroup3">Entre 35 i 39 anys</label>
                     </p>
 
                     <p>

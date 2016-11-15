@@ -136,6 +136,9 @@
             <g:link controller="main" action="forum" class="mdl-navigation__link  mdl-typography--text-uppercase">
                 <g:message code="layout.main.forum" />
             </g:link>
+            <div class="android-drawer-separator"></div>
+            <img class="nav_logo center-block" src="${resource(dir: 'images', file: 'logo_recercaixa_acup_obra.png')}" alt="RecerCaixa-Acup-Obra Social La Caixa">
+            <img class="nav_logo center-block" src="${resource(dir: 'images', file: 'udl.png')}" alt="UdL">
             <%--
             <g:link controller="main" action="survey" class="mdl-navigation__link  mdl-typography--text-uppercase">
                 <g:message code="layout.main.survey" />
@@ -342,17 +345,27 @@
             </div>
             <div class="mdl-mega-footer__bottom-section">
                 <div class="mdl-mega-footer--left-section">
-                    <div style="display: block;">
-                        <img class="footer_logo" src="${resource(dir: 'images', file: 'udl.png')}" alt="UdL">
+                    <div class="center">
+
+                        <%--
                         <img class="footer_logo" src="${resource(dir: 'images', file: 'logo_recercaixa.png')}" alt="RecerCaixa">
+                        --%>
                     </div>
                 </div>
+                <div class="mdl-mega-footer--middle-section">
+                    <div class="center">
+                        <img class="footer_logo" src="${resource(dir: 'images', file: 'udl.png')}" alt="UdL">
+                        <img class="footer_logo" src="${resource(dir: 'images', file: 'logo_recercaixa_acup_obra.png')}" alt="RecerCaixa-Acup-Obra Social La Caixa">
+                    </div>
+                </div>
+                <%--
                 <div class="mdl-mega-footer--right-section">
                     <div style="display: block;">
                         <img class="footer_logo" src="${resource(dir: 'images', file: 'logo_acup.png')}" alt="ACUP">
                         <img class="footer_logo" src="${resource(dir: 'images', file: 'logo_obra_social.png')}" alt="Obra Social 'la Caixa'">
                     </div>
                 </div>
+                --%>
             </div>
             <!--
           <div class="mdl-mega-footer--bottom-section">
